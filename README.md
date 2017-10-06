@@ -1,6 +1,5 @@
-# Terning
-This is a Java program for rolling dice.
-The program has known errors. 
+# Terningespil
+Dette er et terninge spil hvor det gælder om først at være den første til at få 40 point og slå to ens terninger.
 
-## Purpose
-This is an exercise in using _GIT_ to fix errors and trace the changes.
+## Formål
+Formålet med projektet er at lave et spil som to spillere kan spille fra en computer. Hver gang en spiller slår dobbelt for de et ekstra slag, med maks et ekstra slag per tur. 
