@@ -1,18 +1,29 @@
-package terning;
+package Spil;
 
-public class Dice {
-	// roll the die and return the value (1-6)
-	public int roll() {
-		float d1=(float)Math.random();     // 0-1
-		float d2=d1*5;                     // 0-5
-		int d3=Math.round(d2);             // 0-5 integer
-		return d3 + 1;                     // 1-6		
+//Vi laver et terninge opbjekt med udgangspunkt i inledendeprogramering undervisning
+public class Terning {
+	private final int MAX = 6;  // maxks antal øjne
+	private int ØjenVærdi;  // nuværende slag
+	// Vi laver en terning
+	public Terning(int value){
+		ØjenVærdi = value;
 	}
-	
-	// roll the die n times and print the values
-	public void rollMultiple(int n) {
-		for (int i=1; i<n; i++) {
-			System.out.print(roll() + " ");
-		}		
+	// slå med terningen
+	public int roll(){
+		ØjenVærdi = (int)(Math.random() * MAX) + 1;
+		return ØjenVærdi;
+	}
+	// start øjenværdi
+	public void setFaceValue (int value){
+		ØjenVærdi = value;
+	}
+	// hent øjne værdi
+	public int getØjenVærdi(){
+		return ØjenVærdi;
+	}
+	// returnerer en streng repræsentation af objektets data
+	public String toString(){
+		String udfald = "Øjne: " + ØjenVærdi;
+		return udfald;
 	}
 }
