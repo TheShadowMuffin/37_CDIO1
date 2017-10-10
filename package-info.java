@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * @author A
- *
- */
-package terning;
